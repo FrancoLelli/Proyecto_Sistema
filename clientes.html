@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    
+    <title>SISTEMA - CLIENTES</title>
+</head>
+<body>
+    <nav class="nav">
+        <div class="padreAnclas">
+            <a href="index.html" class="anclas">Inicio</a>
+            <a href="#" class="anclas">Proveedores</a>
+            <a href="#" class="anclas">Compras</a>
+            <a href="#" class="anclas">Ventas</a>
+        </div>
+    </nav>
+<section>
+    <h1 align="center">CLIENTES</h1>
+    
+    <!--LABEL, INPUT, FOCO
+        atributos/propiedad: 
+        value, name, type: Propiedades de las etiqueteas
+        method: accion que hara el formulario. 
+        action: donde se envia. se necesita de un submit
+        reset: te pone todo en blanco
+        seleect va con option
+        option: siempre un value
+        textarea: para ingresar texto
+        colspan: para juntar celdas, hay que darle un valor en horizontal
+        rowspan: para juntar celdas, hay que darle un valor en vertical
+        
+    -->
+   <div class="form" align="center">
+        <form name="formCarga" method="post" action="hola.html">
+            <label>
+                Razon Social
+            </label> 
+            <input type="text" name="textRazonSocial">
+            <br>
+            <br>
+            <label>
+                Correo Electronico
+            </label> 
+            <input type="text" name="textCorreoElectronico">
+            <br>
+            <br>
+            <label>
+            Es consumidor Final:
+            </label>
+            <input type="checkbox" name="btnConsumidor">
+            <br>
+            <br>
+            <label>
+                Elija la condicion Fiscal:
+            </label>
+            <select name="sltCP">
+                <option value="1">Cosmidor Final</option>
+                <option value="2">Responsable Inscripto</option>
+                <option value="3">Exento</option>
+                <option value="4">No quiere pagar impuestos</option>
+            </select>
+            <br>
+            <br>
+            <label>
+                Observaciones
+            </label>
+            <textarea name="txtArea"></textarea>
+            <br>
+            <br>
+            <input type="submit" name="btnConfirmar" value="Confirmar">
+            <input type="reset" name="btnReset" value="Borrar Contenido">
+        </form>
+    </div>
+</section>
+</body>
+</html>
