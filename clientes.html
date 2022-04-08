@@ -10,76 +10,106 @@
     <title>SISTEMA - CLIENTES</title>
 </head>
 <body>
-    <nav class="nav">
-        <div class="padreAnclas">
-            <a href="index.html" class="anclas">Inicio</a>
-            <a href="#" class="anclas">Proveedores</a>
-            <a href="#" class="anclas">Compras</a>
-            <a href="#" class="anclas">Ventas</a>
-        </div>
-    </nav>
-<section>
-    <h1 align="center">CLIENTES</h1>
-    
-    <!--
-        LABEL:Permite dar un titulo o descripcion, para el formulario
-        INPUT: control iteratico(se repite), para que el usuario ingrese los datos en un formulario, 
-        FOCO: Cuanso presionamos sobre el input, o lo pasamos por "arriba"
-        atributos/propiedad: Son las caracteristas, en este caso, de las etiquetas 
-        value, name, type: Propiedades de las etiqueteas 
-        action: donde se envia. se necesita de un submit
-        reset: te pone todo en blanco
-        seleect va con option
-        option: siempre un value
-        textarea: para ingresar texto
-        colspan: para juntar celdas, hay que darle un valor en horizontal
-        rowspan: para juntar celdas, hay que darle un valor en vertical
-
-        Metodos: Acciones que puede hacer, en este caso, las etiquetas
-        method: accion que hara el formulario.
+        <nav class="nav">
+            <div class="padreAnclas">
+                <a href="index.html" class="anclas">Inicio</a>
+                <a href="#" class="anclas">Proveedores</a>
+                <a href="#" class="anclas">Compras</a>
+                <a href="#" class="anclas">Ventas</a>
+            </div>
+        </nav>
+    <section>
+        <h1 align="center">CLIENTES</h1>
         
-    -->
-   <div class="form" align="center">
-        <form name="formCarga" method="post" action="hola.html">
-            <label>
-                Razon Social
-            </label> 
-            <input type="text" name="textRazonSocial">
-            <br>
-            <br>
-            <label>
-                Correo Electronico
-            </label> 
-            <input type="text" name="textCorreoElectronico">
-            <br>
-            <br>
-            <label>
-            Es consumidor Final:
-            </label>
-            <input type="checkbox" name="btnConsumidor">
-            <br>
-            <br>
-            <label>
-                Elija la condicion Fiscal:
-            </label>
-            <select name="sltCP">
-                <option value="1">Cosmidor Final</option>
-                <option value="2">Responsable Inscripto</option>
-                <option value="3">Exento</option>
-                <option value="4">No quiere pagar impuestos</option>
-            </select>
-            <br>
-            <br>
-            <label>
-                Observaciones
-            </label>
-            <textarea name="txtArea"></textarea>
-            <br>
-            <br>
-            <input type="submit" name="btnConfirmar" value="Confirmar">
-            <input type="reset" name="btnReset" value="Borrar Contenido">
-        </form>
-    </div>
-</section>
+        <!--LABEL: 
+            INPUT:
+            FOCO
+            atributos/propiedad: Es la caracteristica de la etiqueta 
+            value, name, type: Propiedades de las etiqueteas
+            action: donde se envia. se necesita de un submit
+            reset: te pone todo en blanco
+            seleect va con option
+            option: siempre un value
+            textarea: para ingresar texto
+            colspan: para juntar celdas, hay que darle un valor en horizontal
+            rowspan: para juntar celdas, hay que darle un valor en vertical
+            
+            Metodos / Acciones: 
+            method: accion que hara el formulario. 
+
+        -->
+    <div class="div_form" align="center">
+            <form class="form" name="formCarga" method="post" action="hola.html">
+                <section class="section">
+                <h2 class="titulos">Crear cliente</h2>
+                <!-- Los HR Crean una linea o borde -->
+                    <hr>
+                <label>
+                    Razon Social
+                </label> 
+                <input type="text" name="textRazonSocial" class="input">
+                <br>
+                <label>
+                    Correo Electronico
+                </label> 
+                <input type="text" name="textCorreoElectronico" class="input">
+                <br>
+                
+                <label> Es consumidor Final: </label>
+                <!--Para tildar la opcion correcta-->
+                <input type="checkbox" name="btnConsumidor" class="input">
+                <br>
+                
+                <label >
+                    Elija la condicion Fiscal:
+                </label>
+                
+                <!--
+                    seleect va con option
+                    option: siempre un value
+                    Se utiliza para cuando hay que seleccionar una opcion
+                -->
+                <select name="sltCP" class="input">
+                    <option value="1">Consumidor Final</option>
+                    <option value="2">Responsable Inscripto</option>
+                    <option value="3">Exento</option>
+                    <option value="4">No quiere pagar impuestos</option>
+                </select>
+            <hr >
+                
+
+                <h2 class="titulos">Como prefiere ser contactado</h2>
+                
+                <p class="form_radio">
+                    <!--Permiten elegir una opcion en un grupo.
+                        Para elegir a uno solo, tendremos que tener el mismo name, id, etc-->
+                <label for="correo_electronico">Correo Electronico</label>
+                <input type="radio" name="form_radio" value="correo_electronico"> <br>
+
+                <label for="WhatsApp">WhatsApp</label>
+                <input type="radio" name="form_radio" value="whatsapp">  <br>
+
+                <label for="telegram">Telegram</label>
+                <input type="radio" name="form_radio" value="telegram"> <br>
+
+                <label for="Telefono">telefono</label>
+                <input type="radio" name="form_radio" value="telefono">  <br>
+
+                <label for="Domicilio">Domicilio</label>
+                <input type="radio" name="form_radio" value="domicilio"> 
+                </p>
+
+                <hr>
+                <h2 class="titulos">Observaciones:</h2>
+                <textarea name="txtArea" placeholder="Ingrese alguna observacion"></textarea>
+                <!--Placeholder es lo que va escrito adentro, antes de escribir-->
+                <br>
+                
+                <input type="submit" name="btnConfirmar" value="Confirmar" class="botones botonEnviar">
+                <input type="reset" name="btnReset" value="Borrar Contenido" class="botones botonBorrar">
+            </div>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
