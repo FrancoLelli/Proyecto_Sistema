@@ -52,7 +52,7 @@ background-color: green;
 }
 .section{
     /* Posicione todo en el centro asi queda todo parejo con justify en eje horizontal y align  en eje vertical */
-    display: block;
+    display: block; /*Estabelece el tipo de visualizacion. Le da un estilo block, bloque. Quiere decir que ocupara el 100% del ancho*/
     justify-content: center;
     align-items: center;
     
