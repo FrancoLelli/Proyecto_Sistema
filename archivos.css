@@ -1,0 +1,12 @@
+.linkClientes{
+    color: rgb(19, 19, 200);
+    font-size: 20px;
+    text-decoration: underline;
+}
+.linkClientes:hover{
+color: rgb(0, 255, 255);
+}
+.padreCliente{
+    display: flex;
+    justify-content: center;
+}

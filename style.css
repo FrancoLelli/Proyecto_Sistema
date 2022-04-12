@@ -6,16 +6,16 @@ body{
 
 .padreAnclas{
     background-color: rgb(0, 0, 128);
-    display: flex; /* Se utiliza para controlar estructuras. seguir viendo BUSCANDO */
-    flex-direction: row; /* BUSCAR */
-    justify-content: space-around;  /* BUSCAR */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .anclas{
-    margin: 10px; /* Es el margen */
-    padding: 10px; /* Espacio entre el borde del contenido, y el contenido */
-    text-decoration: none; /* Propiedad que le da al texto decoracion, ya sa underline (linea debajo), o overline (linea rriba), none lo deja sin estilos. Recordemos esto lo ponemos asi, ya que es un enlace */
-    color: white;  /* Color */
-     font-size: 30px; /* Tamaño de letra */
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: white; 
+     font-size: 30px;
 }
 .anclas:hover{
     background-color: rgb(42, 42, 255);
@@ -28,14 +28,14 @@ h1{
 .form{
     border: 4px solid rgb(0, 0, 128);
     width: 500px;
-    display: block; /* BUSCAR */
-    justify-content: center; /* BUSCAR */
+    display: block;
+    justify-content: center;
 }
 
 .botones{
     margin: 10px 10px;
     
-    border-radius: 10px; 
+    border-radius: 10px;
     
 }
 .botonEnviar{
@@ -52,7 +52,7 @@ background-color: green;
 }
 .section{
     /* Posicione todo en el centro asi queda todo parejo con justify en eje horizontal y align  en eje vertical */
-    display: block; /*Estabelece el tipo de visualizacion. Le da un estilo block, bloque. Quiere decir que ocupara el 100% del ancho*/
+    display: block;
     justify-content: center;
     align-items: center;
     
